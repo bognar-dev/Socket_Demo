@@ -8,7 +8,7 @@
 # include <string>
 
 using namespace std;
-string host = "127.0.0.1";
+string host = "127.0.0.2";
 int port = 6200;
 
 void work(string req) {
@@ -23,11 +23,11 @@ void work(string req) {
 }
 
 int main(int argc, char **argv) {
-    string enter;
+    string message;
     for (int i = 0; i < 20; i++) {
-        cin >> enter;
-        if (enter == "e")
-            work("Client1");
+        cout<<"Please enter a message"<<endl;
+        cin >> message;
+            work(message);
     }
 }
 

@@ -74,11 +74,3 @@ netinet/in.h
 Exeption.h
 /mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/Exeption.h
 
-/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/server.cpp
-iostream
--
-Socket.h
-/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/Socket.h
-ServSocket.h
-/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/ServSocket.h
-

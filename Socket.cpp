@@ -36,7 +36,8 @@ Socket::Socket(int socket) : _sfd(socket) {
 void Socket::send(string msg) {
     string not_send;
     size_t size = msg.size();
-    size_t check = write(_sfd,msg.c_str(),size);
+    char const *c_str = msg.c_str();
+    size_t check = write(_sfd,c_str,size);
     if(check != size){
         if(check == -1) {
             throw SocketException(strerror(errno));
@@ -49,11 +50,14 @@ void Socket::send(string msg) {
 
 string Socket::recv() {
     char buffer[1024];
+    string msg;
     size_t check = ::recv(_sfd,buffer,1024,0);
     if(check == -1){
         throw SocketException(strerror(errno));
     }
-    string msg = buffer;
+    for (int i = 0; i < check; ++i) {
+        msg.push_back(buffer[i]);
+    }
     return msg;
 }
 

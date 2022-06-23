@@ -68,10 +68,13 @@ void ServerSocket::send(std::string msg) {
 
 std::string ServerSocket::recv(void) {
     char buffer[1024];
+    string msg;
     size_t check = ::recv(_sfd,buffer,1024,0);
     if(check == -1){
         throw SocketException(strerror(errno));
     }
-    string msg = buffer;
+    for (int i = 0; i < check; ++i) {
+        msg.push_back(buffer[i]);
+    }
     return msg;
 }
