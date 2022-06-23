@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/user.dir/server.cpp.o CMakeFiles/user.dir/Socket.cpp.o CMakeFiles/user.dir/ServSocket.cpp.o CMakeFiles/user.dir/Exeption.cpp.o  -o user 

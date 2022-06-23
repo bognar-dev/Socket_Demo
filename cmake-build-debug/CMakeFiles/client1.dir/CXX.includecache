@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/Exeption.h
+string
+-
+
+/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/Socket.h
+string
+-
+cerrno
+-
+cstring
+-
+netinet/in.h
+-
+Exeption.h
+/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/Exeption.h
+
+/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/client1.cpp
+Socket.h
+/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/Socket.h
+Exeption.h
+/mnt/c/Users/nikla/Documents/Studium/PE2/W12_Sokcet/Exeption.h
+iostream
+-
+string
+-
+

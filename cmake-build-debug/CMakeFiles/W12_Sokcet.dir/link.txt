@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/W12_Sokcet.dir/server.cpp.o CMakeFiles/W12_Sokcet.dir/Socket.cpp.o CMakeFiles/W12_Sokcet.dir/ServSocket.cpp.o CMakeFiles/W12_Sokcet.dir/Exeption.cpp.o  -o W12_Sokcet 
